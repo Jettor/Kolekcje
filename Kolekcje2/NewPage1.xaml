@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kolekcje2.NewPage1"
+             Title="NewPage1">
+    <StackLayout
+    x:Name="stackLayout">
+        <Button
+        x:Name="DodajPrzedmiot"
+        FontSize="25"
+        FontFamily="Bahnschrift"
+        BackgroundColor="#FF0000"
+        TextColor="#000000"
+        Text="Dodaj Przedmiot"
+        Clicked="OnNewItem"
+        HorizontalOptions="CenterAndExpand"/>
+        <Button
+        x:Name="ToMainPage"
+        FontSize="25"
+        FontFamily="Bahnschrift"
+        BackgroundColor="#FF0000"
+        TextColor="#000000"
+        Text="Wróć"
+        Clicked="Wroc"
+        HorizontalOptions="CenterAndExpand"/>
+        <Button
+        x:Name="Odswiez"
+        FontSize="25"
+        FontFamily="Bahnschrift"
+        BackgroundColor="#FF0000"
+        TextColor="#000000"
+        Text="Odśwież"
+        Clicked="OnRestart"
+        HorizontalOptions="CenterAndExpand"/>
+        <VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kolekcje2.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <!-- Dynamic content row -->
+            <RowDefinition Height="Auto" />
+            <!-- Fixed button row -->
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="0">
+            <!-- StackLayout for dynamic buttons -->
+            <StackLayout x:Name="dynamicButtonsLayout"
+                         Padding="30,0"
+                         Spacing="25">
+                <!-- Dynamic buttons will be added here -->
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Fixed button -->
+        <Button x:Name="fixedButton"
+                Grid.Row="1"
+                Text="Fixed Button"
+                Clicked="OnNewCollection"
+                VerticalOptions="End" HorizontalOptions="CenterAndExpand"
+                Margin="10,20"
+                FontSize="25"
+                FontFamily="Bahnschrift"
+                BackgroundColor="#FF0000"
+                TextColor="#000000" />
+
+        <!-- Restart button -->
+        <Button x:Name="restartButton"
+                Grid.Row="1"
+                Text="Odśwież"
+                Clicked="OnRestart"
+                VerticalOptions="End" HorizontalOptions="CenterAndExpand"
+                Margin="10,20"
+                FontSize="25"
+                FontFamily="Bahnschrift"
+                BackgroundColor="#FF0000"
+                TextColor="#000000" />
+    </Grid>
+
+
+
+</ContentPage>
