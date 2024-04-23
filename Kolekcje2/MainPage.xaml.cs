@@ -6,15 +6,15 @@ namespace Kolekcje2
     {
         Grid mainGrid;
 
-        public MainPage()
-        {
-            InitializeComponent();
-            LoadTextFiles();
-            Debug.WriteLine("Ścieżka do danych aplikacji: " + Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData));
-        }
+         public MainPage()
+         {
+             InitializeComponent();
+             LoadTextFiles();
+             Debug.WriteLine("DANE APLIKACJI: " + Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)+"\\Kolekcje");
+         }
         private void LoadTextFiles()
         {
-            string driveLetter = "C:\\Maksym";
+            string driveLetter = "C:\\Users\\Andrii\\AppData\\Roaming\\Kolekcje";
             string[] txtFiles = Directory.GetFiles(driveLetter, "*.txt");
 
             mainGrid = new Grid();
@@ -131,7 +131,7 @@ namespace Kolekcje2
             string collName = await DisplayPromptAsync("Nowa kolekcja", "Wpisz nazwę kolekcji: ", "Dodaj", "Anuluj");
             if (collName != null)
             {
-                string driveletter = "C:\\Maksym";
+                string driveletter = "C:\\Users\\Andrii\\AppData\\Roaming\\Kolekcje";
                 string filename = collName + ".txt";
                 string filePath = Path.Combine(driveletter, filename);
                 DisplayAlert("Utworzono kolekcje ", $"{filename}", "OK");
