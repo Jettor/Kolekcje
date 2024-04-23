@@ -59,7 +59,6 @@ namespace Kolekcje2
             };
             fixedButton.Clicked += OnNewCollection;
 
-            // Create the restart button
             Button restartButton = new Button
             {
                 FontFamily = "Bahnschrift",
